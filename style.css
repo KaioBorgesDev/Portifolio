@@ -159,6 +159,7 @@ nav ul li a:hover {
   background-color: #f5f5f5;
 }
 .greetings {
+    
     padding-top: 10%;
     font-size: 50px;
     justify-self: center;
@@ -249,7 +250,7 @@ nav ul li a:hover {
     margin-top: 30px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 500px;
+    margin-bottom: 400px;
 }
 
 .social-media img{
@@ -296,6 +297,14 @@ nav ul li a:hover {
   
 }
 
+.sobre-mim .habilidades{
+  margin: 20px;
+}
+.sobre-mim .habilidades img{
+    width: 40px;
+    height: 40px;
+}
+
 @media screen and (max-width: 790px) {
   .hamburger {
     display: block;
@@ -304,6 +313,8 @@ nav ul li a:hover {
     display: none;
   }
   .greetings {
+    margin-left: 5px;
+    margin-right: 5px;
     padding-top: 70%;
     font-size: 30px;
     justify-self: center;
