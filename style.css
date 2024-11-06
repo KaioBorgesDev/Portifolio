@@ -266,7 +266,6 @@ nav ul li a:hover {
 }
 
 .sobre-mim{
-  padding: 20px;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -295,7 +294,6 @@ nav ul li a:hover {
   max-width: 600px;
   font-size: 22;
   margin-left: 25px;
-  margin-right: 25px;
   font-weight: 100;
   margin-bottom: 40px;
   
@@ -303,7 +301,9 @@ nav ul li a:hover {
 
 
 .sobre-mim .habilidades{
-  margin: 20px;
+  justify-self: center;
+  align-self: center;
+  max-width: 50%;
 }
 .sobre-mim .habilidades img{
   width: 40px;
@@ -420,7 +420,7 @@ nav ul li a:hover {
   .sobre-mim{
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    
     padding-top: 20px;
 }
 
