@@ -252,6 +252,14 @@ nav ul li a:hover {
     justify-content: space-between;
     margin-bottom: 400px;
 }
+.social-media-contatos{
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
 
 .social-media img{
     height: 40px;
@@ -313,6 +321,7 @@ nav ul li a:hover {
 }
 
 .projetos h3{
+  font-size: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding-top: 20px;
@@ -346,7 +355,7 @@ nav ul li a:hover {
 
 .card img {
   box-shadow: 0 0 0 5px #ffffff80;
-  width: 48px;
+  width: 250px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
