@@ -276,7 +276,10 @@ nav ul li a:hover {
   justify-self: center;
   border-radius: 20px;
   width: 300px;
-  height: 400px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 .sobre-mim .texto-sobre-mim{
   text-align: center;
@@ -296,11 +299,14 @@ nav ul li a:hover {
   
 }
 .sobre-mim .habilidades{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-self: center;
-  align-self: center;
-  max-width: 50%;
-  margin: 10px;
+  gap: 15px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 0 20px;
 }
 .sobre-mim .habilidades img{
   width: 40px;
@@ -417,8 +423,27 @@ nav ul li a:hover {
   .sobre-mim{
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
     padding-top: 20px;
-}
+  }
+  
+  .sobre-mim img{
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+  
+  .sobre-mim .texto-sobre-mim h4{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .sobre-mim .habilidades{
+    justify-content: center;
+    padding: 0 10px;
+    margin: 20px auto;
+    gap: 10px;
+  }
 
 }
