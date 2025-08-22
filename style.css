@@ -265,25 +265,35 @@ nav ul li a:hover {
     height: 40px;
 }
 
-.sobre-mim{
+/* Centralização e responsividade para a seção Sobre Mim */
+.sobre-mim {
   display: flex;
-  justify-self: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 1100px;
 }
-.sobre-mim img{
-  justify-self: center;
+.sobre-mim img {
+  display: block;
   border-radius: 20px;
-  width: 300px;
-  max-width: 100%;
+  width: 280px;
+  max-width: 90vw;
   height: auto;
   object-fit: cover;
   object-position: center;
+  margin: 0 auto;
 }
-.sobre-mim .texto-sobre-mim{
+.sobre-mim .texto-sobre-mim {
   text-align: center;
   color: #494949;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .sobre-mim .texto-sobre-mim h2{
   font-weight: 600;
@@ -291,12 +301,11 @@ nav ul li a:hover {
 }
 
 .sobre-mim .texto-sobre-mim h4{
-  max-width: 750px;
-  font-size: 22;
-  margin-left: 25px;
-  font-weight: 100;
-  margin-bottom: 40px;
-  
+  max-width: 700px;
+  font-size: 20px;
+  margin: 0 auto 30px auto;
+  font-weight: 400;
+  line-height: 1.5;
 }
 .sobre-mim .habilidades{
   display: flex;
@@ -420,30 +429,20 @@ nav ul li a:hover {
     justify-self: center;
     margin-bottom: 400px;
   }
-  .sobre-mim{
-    display: grid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
-  }
-  
-  .sobre-mim img{
-    width: 250px;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto 20px;
-  }
-  
-  .sobre-mim .texto-sobre-mim h4{
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-  }
-  
-  .sobre-mim .habilidades{
-    justify-content: center;
-    padding: 0 10px;
-    margin: 20px auto;
-    gap: 10px;
+  /* Responsivo para telas menores */
+  @media (max-width: 900px) {
+    .sobre-mim {
+      flex-direction: column;
+      padding: 30px 5vw;
+      gap: 24px;
+    }
+    .sobre-mim img {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+    .sobre-mim .texto-sobre-mim {
+      max-width: 98vw;
+    }
   }
 
 }
