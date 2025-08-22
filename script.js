@@ -1,6 +1,8 @@
 const mobileNav = document.querySelector(".hamburger");
 const navbar = document.querySelector(".menubar");
+const idade = document.getElementById("idade");
 
+idade.innerHTML = new Date().getFullYear() - 2004;
 const toggleNav = () => {
   navbar.classList.toggle("active");
   mobileNav.classList.toggle("hamburger-active");
