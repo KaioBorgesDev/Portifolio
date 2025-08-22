@@ -198,5 +198,12 @@
 </div>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const idade = document.getElementById("idade");
+
+      idade.innerHTML = new Date().getFullYear() - 2004;
+    });
+  </script>
   </body>
 </html>
