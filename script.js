@@ -8,7 +8,7 @@ const toggleNav = () => {
 mobileNav.addEventListener("click", () => toggleNav());
 
 // Array de palavras para o efeito de digitação
-const words = ["Full-Stack", "Back-End"];
+const words = ["Back-End"];
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
